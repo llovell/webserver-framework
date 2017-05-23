@@ -14,7 +14,8 @@ The client-side uses [react](https://facebook.github.io/react) which gives us co
 
 ### Server
 
-The server-side uses an MVC type framework called [krakenjs](http://krakenjs.com/)
+The server-side uses an MVC type framework called [krakenjs](http://krakenjs.com/) which is an extension over
+the core [express](https://expressjs.com/) application it runs on
 
 ### Setup
 
