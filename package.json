@@ -4,7 +4,7 @@
   "description": "Webserver Framework",
   "scripts": {
     "dev": "npm run lint -s && concurrently --kill-others 'npm run dev:client -s'",
-    "dev:client": "node client-dev-server.js",
+    "dev:client": "node client-side-dev-server.js",
     "build": "rimraf dist && npm run lint -s && webpack --config webpack.production.config.js",
     "doc": "documentation build test/** -f html -o doc",
     "lint": "eslint .",
