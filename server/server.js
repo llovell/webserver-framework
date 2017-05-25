@@ -13,10 +13,12 @@ const server = express();
 
 server.use(kraken());
 
+server.on('start', () => {
+  console.log('%s server running port 8000', server.kraken.get('env:env')); // eslint-disable-line no-console
+});
+
 /**
  * Run Server
  */
 
-server.listen(8000, () => {
-  console.log('Server up: 8000'); // eslint-disable-line no-console
-});
+server.listen(8000);
