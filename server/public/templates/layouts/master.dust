@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{@pre type="content" key="title"/}</title>
+    </head>
+    <body>
+        {+body /}
+    </body>
+</html>

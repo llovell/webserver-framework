@@ -3,6 +3,7 @@
 */
 
 const express = require('express');
+const kraken = require('kraken-js');
 
 /**
  * Setup Server
@@ -10,11 +11,7 @@ const express = require('express');
 
 const server = express();
 
-server.set('view engine', 'ejs');
-
-server.get('*', (req, res) => {
-  res.send('hello world');
-});
+server.use(kraken());
 
 /**
  * Run Server
