@@ -14,7 +14,7 @@ const WebpackChunkHash = require('webpack-chunk-hash'); // eslint-disable-line i
 module.exports = {
   entry: {
     app: './client/app.js',
-    vendor: './client/vendor.js',
+    vendor: '',
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({

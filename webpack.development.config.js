@@ -17,9 +17,6 @@ module.exports = {
       'webpack/hot/dev-server',
       'webpack-dev-server/client?http://localhost:8080',
     ],
-    vendor: [
-      './client/vendor.js',
-    ],
   },
   plugins: [
     new NamedModulesPlugin(),
