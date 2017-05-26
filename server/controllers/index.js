@@ -9,9 +9,7 @@ const indexModel = require('../models/index');
 */
 
 module.exports = (router) => {
-  const model = indexModel();
-
   router.get('/', (req, res) => {
-    res.render('index', model);
+    res.render('index', indexModel());
   });
 };
