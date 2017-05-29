@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/llovell/webserver-framework.svg?branch=master)](https://travis-ci.org/llovell/webserver-framework)
 
-This is a framework that can be used for new JavaScript based app development
+This is a framework for new JavaScript based app development
 
 ### Dependencies
 
