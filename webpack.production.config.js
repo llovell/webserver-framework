@@ -14,7 +14,10 @@ const WebpackChunkHash = require('webpack-chunk-hash'); // eslint-disable-line i
 module.exports = {
   entry: {
     app: './client/app.js',
-    vendor: '',
+    vendor: [
+      'react',
+      'react-dom',
+    ],
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
@@ -26,7 +29,6 @@ module.exports = {
     new ChunkManifestPlugin({
       filename: 'chunk-manifest.json',
       manifestVariable: 'webpackManifest',
-      inlineManifest: true,
     }),
   ],
   module: {
@@ -39,7 +41,7 @@ module.exports = {
     }],
   },
   output: {
-    path: resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'server/public/dist'),
     publicPath: '/',
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',

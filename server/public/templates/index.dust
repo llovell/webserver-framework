@@ -1,5 +1,6 @@
 {>"layouts/master" /}
 
 {<body}
+    <div id="app"></div>
     <h1>{@pre type="content" key="greeting"/}</h1>
 {/body}

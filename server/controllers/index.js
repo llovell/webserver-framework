@@ -10,6 +10,8 @@ const indexModel = require('../models/index');
 
 module.exports = (router) => {
   router.get('/', (req, res) => {
-    res.render('index', indexModel());
+    res.render('index', Object.assign({},
+                                      indexModel(),
+                                      req.app.locals.chunkManifest)); // provide chunkManifest
   });
 };
